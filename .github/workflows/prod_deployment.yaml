@@ -4,7 +4,6 @@ on:
   push:
     tag:
       - v*
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
