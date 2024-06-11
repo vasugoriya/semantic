@@ -2,6 +2,8 @@ name: QA Deploy Terraform
 
 on:
   push:
+    branches:
+      - main
     tag:
       - v*
 

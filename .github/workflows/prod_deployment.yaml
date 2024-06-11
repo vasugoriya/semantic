@@ -2,6 +2,8 @@ name: Prod Deploy Terraform
 
 on:
   push:
+    branches:
+      - main
     tag:
       - v*
 jobs:

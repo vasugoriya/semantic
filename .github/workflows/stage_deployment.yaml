@@ -2,8 +2,11 @@ name: Stage Deploy Terraform
 
 on:
   push:
+    branches:
+      - main
     tag:
       - v*
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
