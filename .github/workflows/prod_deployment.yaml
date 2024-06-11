@@ -2,11 +2,9 @@ name: Prod Deploy Terraform
 
 on:
   push:
-    branches:
-      - main
-    # tag:
-    #   - v*
-    
+    tags:
+      - v*
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
