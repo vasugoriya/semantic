@@ -16,7 +16,9 @@
       }],
       "@semantic-release/release-notes-generator",
       "./incremental-release.js",
-      "@semantic-release/github"
+      ["@semantic-release/github", {
+        "success": false
+      }]
     ]
   }
   
