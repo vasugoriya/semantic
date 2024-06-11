@@ -2,8 +2,10 @@ name: Stage Deploy Terraform
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
+    tag:
+      - v*
 
 jobs:
   deploy:
