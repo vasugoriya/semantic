@@ -1,0 +1,9 @@
+{
+    "branches": ["main", "stage", "dev"],
+    "plugins": [
+        "./always-release.js",
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/github"
+      ]
+  }
