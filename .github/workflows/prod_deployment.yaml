@@ -3,7 +3,7 @@ name: Prod Deploy Terraform
 on:
   push:
     tags:
-      - '*' 
+      - '*'
 
 jobs:
   deploy:
