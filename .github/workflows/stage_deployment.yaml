@@ -1,9 +1,8 @@
 name: Stage Deploy Terraform
 
 on:
-  push:
-    tags:
-      - "v[0-9]+.[0-9]+.[0-9]+"
+  release:
+    types: [published]
 
 jobs:
   deploy:
@@ -13,7 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
 
       - name: Fetch Tags
