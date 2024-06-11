@@ -39,7 +39,6 @@ jobs:
   release:
     needs: terraform-plan
     uses: vasugoriya/semantic-central/.github/workflows/semantic-release.yml@main
-
   # release:
   #   needs: terraform-plan
   #   runs-on: ubuntu-latest
