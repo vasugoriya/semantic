@@ -2,7 +2,7 @@ name: Prod Deploy Terraform
 
 on:
   push:
-    tag:
+    tags:
       - v*
 
 jobs:
