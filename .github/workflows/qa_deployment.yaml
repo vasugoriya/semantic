@@ -1,11 +1,8 @@
 name: QA Deploy Terraform
 
 on:
-  workflow_run:
-    workflows:
-      - "Dev Deploy Terraform"
-    types:
-      - completed
+  release:
+    types: [published]
 
 jobs:
   deploy:
