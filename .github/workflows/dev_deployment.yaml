@@ -40,7 +40,7 @@ jobs:
     needs: terraform-plan
     uses: vasugoriya/semantic-central/.github/workflows/semantic-release.yml@main
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
   # release:
   #   needs: terraform-plan
   #   runs-on: ubuntu-latest
