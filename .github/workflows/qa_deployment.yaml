@@ -1,10 +1,11 @@
 name: QA Deploy Terraform
 
 on:
-  push:
-    tags:
-      - "v[0-9]+.[0-9]+.[0-9]+"
-    if: startsWith(github.ref, 'refs/tags/')
+  workflow_run:
+    workflows:
+      - "Dev Deploy Terraform"
+    types:
+      - completed
 
 jobs:
   deploy:
