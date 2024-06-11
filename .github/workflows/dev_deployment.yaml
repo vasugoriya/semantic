@@ -1,6 +1,5 @@
 name: Dev Deploy Terraform
-# on:
-#   workflow_dispatch:
+
 
 on:
   push:
