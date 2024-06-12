@@ -7,7 +7,7 @@ variable "environment" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucketclala123131-4-${var.environment}"
+  bucket = "my-tf-test-bucketclala123131-5-${var.environment}"
 
   tags = {
     Name        = "My bucket"
