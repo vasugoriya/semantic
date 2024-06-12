@@ -36,11 +36,10 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: terraform apply -auto-approve -var="environment=dev"
 
-  release:
+  release-tags:
     needs: terraform-plan
     uses: vasugoriya/semantic-central/.github/workflows/semantic-release.yml@main
-    secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    secrets: inherit
   # release:
   #   needs: terraform-plan
   #   runs-on: ubuntu-latest
